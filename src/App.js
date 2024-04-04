@@ -4,8 +4,8 @@
 // import RecipePage from './RecipePage';
 // import Recipe from './Rcomp';
 // const App = () => {
-//   const APP_ID = "b72b0cce";
-//   const APP_KEY = "ce0561a6abb1bfdfee890342b41086ce";
+//   const APP_ID = "apiid";
+//   const APP_KEY = "appkey";
 //   const [recipes, setRecipes] = useState([]);
 //   const [search, setSearch] = useState("");
 //   const [query, setQuery] = useState("chicken");
@@ -68,8 +68,8 @@
 // import { useParams } from 'react-router-dom';
 
 // const App = () => {
-//   const APP_ID = "b72b0cce";
-//   const APP_KEY = "ce0561a6abb1bfdfee890342b41086ce";
+//   const APP_ID = "appid";
+//   const APP_KEY = "appkey";
 //   const [recipes, setRecipes] = useState([]);
 //   const [search, setSearch] = useState("");
 //   const {searchP}=useParams();
@@ -125,8 +125,8 @@ import Recipe from './Rcomp';
 import { useParams } from 'react-router-dom';
 
 const App = () => {
-  const APP_ID = "b72b0cce";
-  const APP_KEY = "ce0561a6abb1bfdfee890342b41086ce";
+  const APP_ID = "appid";
+  const APP_KEY = "appkey";
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
   const { query } = useParams(); // Extract the 'query' parameter from the URL
