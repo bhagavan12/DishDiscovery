@@ -1,0 +1,25 @@
+/* .landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel-container {
+    max-width: 750px;
+    height: 50px;
+  } */
+  /* height: 100vh; */
+  .landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .carousel-container {
+    margin-bottom: 20px; /* Adjust spacing between carousel and nav tabs */
+  }
+  
+  .nav-tabs-container {
+    width: 100%; /* Ensure the nav tabs take full width */
+    max-width: 750px; /* Adjust as needed */
+  }
+  

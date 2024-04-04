@@ -1,0 +1,248 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    /* background":#e3f2fd"; */
+    /* width: fit-content; */
+  }
+  
+  .left-side {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .right-side {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .image {
+    /* Styles for image */
+    /* width: max-content; */
+    /* flex: 1; */
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    background: rgb(228, 238, 244);
+  }
+  
+  .btm{
+    width:60px;
+    font-size: x-small;
+  }
+  .buttons {
+    display: flex;
+    /* justify-content: space-between; */
+    gap:10px;
+    margin-bottom: 20px;
+  }
+  
+  .box {
+    /* Styles for box */
+    display: flex
+  }
+    
+  table {
+    width: 100%;
+  }
+  .table-container {
+    overflow: auto;
+    max-height: 500px; /* Adjust the maximum height as needed */
+    background-color: white;
+    border-radius: 25px;
+    /* border-top: yellowgreen; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
+    transition: all .1s ease-in;
+}
+.table-container:hover {
+  top: -2px;
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.2);
+}
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+  .small-image {
+    width: 70px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.extra-small-image {
+    width: 30px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+  /*html css card*/
+  .card {
+    width: 300px;
+    height: 400px;
+    background: white;
+    text-decoration: none;
+    color: #444;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in;
+  }
+  
+  .card:hover {
+    top: -2px;
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card article {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* .card h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+  } */
+  
+  .card p {
+    flex: 1;
+    line-height: 1.4;
+  }
+  
+  /* .card span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin: 2em 0 0 0;
+  } */
+  
+  .card .thumb {
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .item-1 {
+    @media (min-width: 60em) {
+      grid-column: 1 / span 2;
+    }
+  }
+  
+  .item-1 h1 {
+    @media (min-width: 60em) {
+      font-size: 24px;
+    }
+  }
+  /*html css card*/
+
+
+
+  /*tooltip*/
+  .tooltip-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.3s;
+    background-color: #D1E7DD;
+    padding: 11px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #D1E7DD;
+  }
+  
+  .text {
+    color: rgb(10, 9, 9);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .svgIcon {
+    width: 16px;
+    height: auto;
+  }
+  .tooltip {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.3em 0.6em;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    background-color:#D1E7DD;
+    border-radius: 12px;
+    color: rgb(34, 34, 34);
+  }
+  
+  .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 0.6em;
+    width: 0.6em;
+    bottom: -0.2em;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    background-color:#D1E7DD;
+    /* border-color: aqua; */
+  }
+  
+  .tooltip-container:hover .tooltip {
+    top: -100%;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  /*tooltip*/
+/*chatgpt hover*/
+.containerh {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+}
+
+.extra-card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: transform 0.4s ease-out;
+}
+
+/* .main-card {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  z-index: 1;
+} */
+
+.extra-card {
+  background-color: lightblue;
+  color: black;
+  transform: translateX(0);
+  z-index: 0;
+}
+
+.containerh:hover .extra-card {
+  transform: translateX(150%);
+}
+
+/*chatgpt hover*/
